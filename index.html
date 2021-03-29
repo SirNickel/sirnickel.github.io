@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Stream Bot</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- <script src="jquery-3.2.1.min.js"></script> -->
+    <script src="tmi.js"></script>
+    <script src="hue.js"></script>
+    <script src="config.js"></script>
+    <script src="commands.js"></script>
+</head>
+<body>
+<div class="full-screen">
+    <div id="commands">
+        <button id="uptime" class="button" onclick="StreamTime()">Uptime</button>
+        <button id="buttonNebel" class="button" onclick="nebel('an')">Nebel an</button>
+        <button id="light_off" class="button" onclick="setLightGroup({'on': false})">Licht aus</button>
+        <button id="ruffle" class="button" onclick="setGewinnspiel('true')">Gewinnspiel</button>
+        <span id="rulist" style="vertical-align: middle; font-size: 18px;"></span>
+        <!--<span id="uptime" style="vertical-align: middle;"></span>-->
+        <span id="viewers" style="vertical-align: middle;"></span>
+    </div>
+    <div id="content">
+        <div id="chat_box">
+            <div id="chat"></div>
+            <div id="chat_input">
+                <input class="button" type="text" id="ChatInput" value="">
+                <input class="button" type="submit" value="Chat" onclick="sendChat()"/>
+            </div>
+        </div>
+        <div id="users"></div>
+    </div>
+    <script src="main.js"></script>
+</div>
+<div id="pfu" style="visibility: hidden">
+    <img src="./images/pfu.jpg">
+</div>
+</body>
+</html>

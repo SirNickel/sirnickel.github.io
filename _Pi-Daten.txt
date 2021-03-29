@@ -1,0 +1,4 @@
+SSH: ever4computer.de:4567
+pi:King2019!
+Name des PI's: PiBot
+IP-Adresse(intern): 192.168.10.240/24
